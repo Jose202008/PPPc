@@ -4,7 +4,7 @@ from django.template import loader
 
 import datetime
 
-opcionesMenu = ["  Inicio  ", "Institucional  ", "Servicios  ", "Contacto  ", "Revista  ", "Ingresar  "]
+opcionesMenu = [" Inicio ", " Servicios ", " Contacto "]
 
 def contacto(request):
     return HttpResponse("Contacto")

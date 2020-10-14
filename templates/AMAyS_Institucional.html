@@ -1,0 +1,43 @@
+{% extends "AMAyS_homepage.html" %}
+{% block content %}
+{% load static %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	#Divisor{
+		color: blue;
+		background-color:white;
+		text-align: center;
+	}
+	#Divisor:hover{color: white; background-color:azure;}
+	#Videocentrado{
+		text-align: center;
+		background-color: rgb(181, 255, 132);
+		margin: 10px;
+		padding: 20px;
+	}
+</style>
+
+<body>
+	<!-- div id="Divisor">
+		<p><img src="{% static 'img/Logo_AMAyS_chico.png' %}" alt="Logo" height="32px"></p>
+	</div -->
+
+	<hr>
+	<div>
+		<h1>
+			Somos una mutual
+		</h1>
+	</div>
+
+	<hr>
+	<div>
+		<p id="Videocentrado">
+			<video src="{% static 'img/AMAyS_Quedate.mp4' %}" alt="Quedate" height="400" controls></video>
+		</p>
+	</div>
+
+</body>
+<!-- Optional JavaScript -->
+
+{% endblock %}
