@@ -10,7 +10,7 @@ def contacto(request):
     return HttpResponse("Contacto")
 
 def MiHome(request):
-	temp = loader.get_template("Inicio.html")
+	temp = loader.get_template('Inicio.html')
 	# context = {"opciones": opcionesMenu}
 	# return HttpResponse(temp.render(context))
 	return HttpResponse(temp.render({"opciones": opcionesMenu}))
