@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'vyi1-vnm8!)2jbin7f)i$d(zqkm#%t
 # DEBUG = True
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 
-ALLOWED_HOSTS = ['pppc.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'MiProyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'MiProyecto/templates')],
+        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,7 +114,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'),)
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),'/tmp/staticfiles')
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media')
 
