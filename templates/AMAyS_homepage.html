@@ -12,19 +12,25 @@
 		h5 {
 		color: rgb(128, 0, 0);
 		text-align:left;
-		line-height:0vmin;
+		line-height: 12px;
 		font-size:medium;
 		}
 	</style>
 
 </head>
   <body>
-    <h1>
-		<img src="{% static 'img/Logo_AMAyS_chico.png' %}" alt="Logo" > A.M.A.yS.    
-		{% for opcion in opciones %}
-			<button type="button" class="btn btn-info"> {{opcion}} </button>
-		{% endfor %}
-	</h1>
+    <h1 style="color:rgb(168, 0, 0); background-color: rgb(255, 255, 128); padding: 8px;">
+		<img src="{% static 'img/Logo_AMAyS_chico.png' %}" alt="Logo" > A. M. A. y S.    
+	</h1>  
+<!--	{% for opcion in opciones %}
+		<button type="button" class="btn btn-info btn-sm"> {{opcion}} </button>
+	{% endfor %} -->
+	<button type="button" class="btn btn-info btn-sm"> {{opciones.0}} </button>
+	<button type="button" class="btn btn-info btn-sm"> {{opciones.1}} </button>
+	<button type="button" class="btn btn-info btn-sm"> {{opciones.2}} </button>
+	<button type="button" class="btn btn-info btn-sm"> {{opciones.3}} </button>
+	<button type="button" class="btn btn-info btn-sm"> {{opciones.4}} </button>
+	<hr>
 
 {% block content %}
 
@@ -41,7 +47,8 @@
 					<p>Sub-agentes de Lotería Chaqueña</p>
 				</h4>
 				<h5 class="grey-text text-darken-4">
-					<p>Arbo y Blanco 292, Resistencia(Chaco)</p>
+					<p>Arbo y Blanco 292, </p>
+					<p>Resistencia(Chaco)</p>
 					<p>Tel.362-4487936/15186200</p>
 					<p>Correo: amays_lot@hotmail.com</p>
 				</h5>
