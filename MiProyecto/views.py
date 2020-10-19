@@ -17,7 +17,7 @@ def Servicios(request):
 	return HttpResponse(temp.render({"opciones": opcionesMenu}))
 
 def Contacto(request):
-	temp = loader.get_template('contacto.html')
+	temp = loader.get_template('Contacto.html')
 	return HttpResponse(temp.render({"opciones": opcionesMenu}))
 
 # def contacto(request):
