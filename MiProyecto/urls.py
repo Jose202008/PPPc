@@ -21,8 +21,9 @@ from MiApp.views import fecha_hora
 
 urlpatterns = [
     path('',views.MiHome),
-    path('hora/',fecha_hora),
-    path('contacto/',views.contacto),
+    path('Inicio/',views.MiHome),
+    path('Servicios/',views.Servicios),
+    path('Contacto/',views.Contacto),
     path('admin/', admin.site.urls),
     path('AMAyS/',include('AMAyS.urls')),
 #    path('MiApp/',include('MiApp.urls')),
