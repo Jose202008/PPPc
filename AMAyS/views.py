@@ -4,7 +4,9 @@ from django.template import loader
 
 # Create your views here.
 
-opcionesMenu = ["Inicio", "Institucional", "Servicios", "Contacto", "Revista", "Ingresar"]
+# opcionesMenu = ["Inicio", "Institucional", "Servicios", "Contacto", "Revista", "Ingresar"]
+opcionesMenu = ["Inicio", "Institucional", "Contacto", "Revista"]
+
 def AMAyS_Inicio(request):
 	temp = loader.get_template("AMAyS_Inicio.html")
 	# context = {"opciones": opcionesMenu}
